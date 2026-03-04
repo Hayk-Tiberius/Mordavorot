@@ -160,3 +160,119 @@ main {
     transform: translateY(0);
   }
 }
+
+/* Contact секция */
+
+.contacts_section {
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact_photo {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts_items {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2vh;
+}
+
+.contacts_title {
+  font-size: 3vw;
+  font-weight: 900;
+}
+
+.contacts_text {
+  width: 80%;
+}
+
+/* ---------- FORM ---------- */
+
+.form {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+
+  padding-top: 20px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: white;
+
+  font-size: 1rem;
+}
+
+.label-name {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  border-bottom: 1px solid white;
+}
+
+.label-name::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 100%;
+
+  border-bottom: 3px solid #ffffff;
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+
+  left: 0;
+  bottom: 5px;
+
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:not(:placeholder-shown) + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.form input:focus + .label-name::after,
+.form input:not(:placeholder-shown) + .label-name::after {
+  transform: translateX(0%);
+}
