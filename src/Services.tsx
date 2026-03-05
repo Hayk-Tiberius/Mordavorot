@@ -3,7 +3,11 @@ import App from "./App";
 function Services() {
   return (
     <>
-      <div>gg</div>
+      <div className="services">
+        <div className="services_items"></div>
+        <div className="services_items"></div>
+        <div className="services_items"></div>
+      </div>
     </>
   );
 }
