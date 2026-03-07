@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function Contacts() {
-
   const [result, setResult] = useState("");
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -10,7 +9,6 @@ function Contacts() {
     const formData = new FormData(event.currentTarget);
     formData.append("access_key", "1fbeacb1-44be-49d8-90ea-a5216a342bc2");
 
-
     for (let [key, value] of formData.entries()) {
       console.log(key, value);
     }
@@ -18,7 +16,7 @@ function Contacts() {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData
+        body: formData,
       });
 
       const data = await response.json();
@@ -56,7 +54,14 @@ function Contacts() {
 
           <div className="contacts_text">
             <div className="form">
-              <input placeholder="" id="email" name="email" type="email" autoComplete="off" required />
+              <input
+                placeholder=""
+                id="email"
+                name="email"
+                type="email"
+                autoComplete="off"
+                required
+              />
 
               <label htmlFor="email" className="label-name">
                 <span className="content-name">Email *</span>
@@ -66,7 +71,14 @@ function Contacts() {
 
           <div className="contacts_text">
             <div className="form">
-              <input placeholder="" id="message" name="phone" type="text" autoComplete="off" required />
+              <input
+                placeholder=""
+                id="message"
+                name="phone"
+                type="text"
+                autoComplete="off"
+                required
+              />
 
               <label htmlFor="message" className="label-name">
                 <span className="content-name">Ваш телефон *</span>
@@ -75,7 +87,13 @@ function Contacts() {
           </div>
           <div className="contacts_text">
             <div className="form">
-              <input placeholder="" id="message" name="socila_media" type="text" autoComplete="off" />
+              <input
+                placeholder=""
+                id="message"
+                name="socila_media"
+                type="text"
+                autoComplete="off"
+              />
 
               <label htmlFor="social_media" className="label-name">
                 <span className="content-name">Ссылка на социальную сеть</span>
@@ -84,7 +102,14 @@ function Contacts() {
           </div>
           <div className="contacts_text">
             <div className="form">
-              <input placeholder="" id="message" name="date" type="text" autoComplete="off" required />
+              <input
+                placeholder=""
+                id="message"
+                name="date"
+                type="text"
+                autoComplete="off"
+                required
+              />
 
               <label htmlFor="message" className="label-name">
                 <span className="content-name">Дата события *</span>

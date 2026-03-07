@@ -75,10 +75,8 @@ main {
 .author_name {
   font-size: 68px;
   padding-bottom: 30px;
-  color: #e4e7e4
+  color: #e4e7e4;
 }
-
-
 
 /* Работа с второй секцией */
 
@@ -103,8 +101,8 @@ main {
   font-size: 2.2vw;
 }
 
-
-.icon_item {}
+.icon_item {
+}
 
 .icons {
   display: flex;
@@ -124,11 +122,11 @@ main {
   width: 90%;
 }
 
-.major_section> ::-webkit-scrollbar {
+.major_section > ::-webkit-scrollbar {
   width: 0;
 }
 
-.major_section> :nth-child(odd) {
+.major_section > :nth-child(odd) {
   align-self: start;
   animation: scrollUp 120s linear 1;
 }
@@ -138,12 +136,12 @@ main {
   animation: scrollDown 120s linear 1;
 }
 
-.major_section> :nth-child(odd):hover {
+.major_section > :nth-child(odd):hover {
   cursor: pointer;
   z-index: 1;
 }
 
-.major_section> :nth-child(even):hover {
+.major_section > :nth-child(even):hover {
   cursor: pointer;
   z-index: 1;
 }
@@ -173,6 +171,7 @@ main {
 .contacts_section {
   width: 80%;
   height: 100%;
+
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -181,6 +180,7 @@ main {
 
 .contact_photo {
   object-fit: contain;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
@@ -212,8 +212,9 @@ main {
 
 .form {
   width: 100%;
+  height: 50%;
   position: relative;
-  height: 60px;
+  height: 6vh;
   overflow: hidden;
 }
 
@@ -273,21 +274,20 @@ main {
 }
 
 .contact_form {
-  margin-bottom: 1000px;
+  margin-bottom: 70vh;
 }
 
-.form input:focus+.label-name .content-name,
-.form input:not(:placeholder-shown)+.label-name .content-name {
+.form input:focus + .label-name .content-name,
+.form input:not(:placeholder-shown) + .label-name .content-name {
   transform: translateY(-150%);
   font-size: 0.8rem;
   color: #ffffff;
 }
 
-.form input:focus+.label-name::after,
-.form input:not(:placeholder-shown)+.label-name::after {
+.form input:focus + .label-name::after,
+.form input:not(:placeholder-shown) + .label-name::after {
   transform: translateX(0%);
 }
-
 
 /* Секция Услуг (Services) */
 
