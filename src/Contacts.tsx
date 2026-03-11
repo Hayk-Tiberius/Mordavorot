@@ -125,7 +125,11 @@ function Contacts() {
               </label>
             </div>
           </div>
-          <button type="submit">Отправить</button>
+          <button type="submit" className="btn-17">
+            <span className="text-container">
+              <span className="text">Отправить</span>
+            </span>
+          </button>
         </div>
       </form>
     </div>
