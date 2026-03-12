@@ -35,6 +35,17 @@ main {
   justify-content: space-between;
 }
 
+/* Intro */
+
+.intro_photo {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  width: 96vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 /* Работа с первой секцией */
 
 .section1 {
