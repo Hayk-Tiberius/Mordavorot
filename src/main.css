@@ -44,6 +44,36 @@ main {
   width: 96vw;
   height: 100vh;
   object-fit: cover;
+  animation: intro_scale 1.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes intro_scale {
+  0% {
+    width: 112vw;
+    height: 120vh;
+  }
+
+  100% {
+    width: 96vw;
+    height: 100vh;
+  }
+}
+
+.intro_photo.active {
+  animation: intro_scroll 0.9s ease-in 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes intro_scroll {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -9999;
+  }
 }
 
 /* Работа с первой секцией */

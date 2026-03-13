@@ -3,11 +3,19 @@ import intro from "../assets/Intro/_DSC9249.jpg";
 import { CIcon } from "@coreui/icons-react";
 import { cibTelegram, cibInstagram } from "@coreui/icons";
 import { Link, Outlet } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [active, setActive] = useState(false);
+
   return (
     <>
-      <img src={intro} alt="Intro" className="intro_photo" />
+      <img
+        src={intro}
+        alt="Intro"
+        className={`intro_photo ${active ? "active" : ""}`}
+        onClick={() => setActive(true)}
+      />
       <main>
         <section className="section1">
           <div className="menu">
