@@ -33,7 +33,9 @@ function App() {
             </span>
           </div>
           <div>
-            <span className="all_photos">All</span>
+            <span className="all_photos">
+              <Link to="/gallery">All</Link>
+            </span>
           </div>
           <div className="author_name">Mordavorot</div>
         </section>
