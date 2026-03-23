@@ -492,7 +492,6 @@ main {
   flex-direction: row;
   position: relative;
   gap: 3vw;
-  border: 1px solid white;
 }
 
 .services_items {
@@ -500,6 +499,7 @@ main {
   height: 73%;
   background: linear-gradient(0deg, rgba(54, 54, 54, 1) 0%, rgba(26, 26, 26, 1) 100%);
   border: 1px solid white;
+  border-radius: 3.5vw;
 
   transition:
     width 1.5s ease-in-out,
@@ -511,4 +511,31 @@ main {
   width: 70%;
   height: 90%;
   box-shadow: 0 0 30px 15px rgba(225, 225, 225, 0.3);
+}
+
+.services_items img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.services_items_photo {
+  overflow: hidden;
+  height: 50%;
+  border-top-left-radius: 3.5vw;
+  border-top-right-radius: 3.5vw;
+}
+
+.services_items_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  font-family: Stetica;
+  color: #e4e7e4;
+
+  height: 50%;
+}
+
+.services_items_text_title {
+  font-size: 2.8vw;
 }
