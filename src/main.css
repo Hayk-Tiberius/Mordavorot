@@ -511,6 +511,8 @@ main {
   width: 70%;
   height: 90%;
   box-shadow: 0 0 30px 15px rgba(225, 225, 225, 0.3);
+  animation: text_scale 5s ease-in-out 1;
+  animation-fill-mode: forwards;
 }
 
 .services_items img {
@@ -526,16 +528,32 @@ main {
 }
 
 .services_items_text {
+  padding: 0 2vh 2vh 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+
   gap: 1vh;
   font-family: Stetica;
   color: #e4e7e4;
-
   height: 50%;
 }
 
 .services_items_text_title {
   font-size: 2.8vw;
+}
+
+@keyframes text_scale {
+  0% {
+    font-size: 0.9vw;
+  }
+
+  30% {
+    font-size: 1.2vw;
+  }
+
+  100% {
+    font-size: 1.2vw;
+  }
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import service1 from "../assets/img/services_page/services_photo.jpg";
 import service2 from "../assets/img/services_page/services_video.jpg";
 import service3 from "../assets/img/services_page/services_ai.jpg";
@@ -19,11 +20,13 @@ function Services() {
               voluptatibus nesciunt mollitia ex, similique non fugit soluta aut quas dolorum
               reiciendis?
             </span>
-            <button type="submit" className="btn-17">
-              <span className="text-container">
-                <span className="text">Отправить заявку</span>
-              </span>
-            </button>
+            <Link to="/contacts">
+              <button type="submit" className="btn-17">
+                <span className="text-container">
+                  <span className="text">Отправить заявку</span>
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="services_items">
@@ -39,11 +42,13 @@ function Services() {
               voluptatibus nesciunt mollitia ex, similique non fugit soluta aut quas dolorum
               reiciendis?
             </span>
-            <button type="submit" className="btn-17">
-              <span className="text-container">
-                <span className="text">Отправить заявку</span>
-              </span>
-            </button>
+            <Link to="/contacts">
+              <button type="submit" className="btn-17">
+                <span className="text-container">
+                  <span className="text">Отправить заявку</span>
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="services_items">
@@ -59,11 +64,13 @@ function Services() {
               voluptatibus nesciunt mollitia ex, similique non fugit soluta aut quas dolorum
               reiciendis?
             </span>
-            <button type="submit" className="btn-17">
-              <span className="text-container">
-                <span className="text">Отправить заявку</span>
-              </span>
-            </button>
+            <Link to="/contacts">
+              <button type="submit" className="btn-17">
+                <span className="text-container">
+                  <span className="text">Отправить заявку</span>
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

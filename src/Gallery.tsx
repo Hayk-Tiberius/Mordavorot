@@ -1,7 +1,16 @@
 import App from "./App";
 
 function Gallery() {
-  return <></>;
+  return (
+    <>
+      <div className="gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </>
+  );
 }
 
 export default Gallery;
