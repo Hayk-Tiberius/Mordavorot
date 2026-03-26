@@ -1,13 +1,28 @@
-import App from "./App";
+import gallery1 from "../assets/img/gallery_page/gallery1.jpg";
+import gallery2 from "../assets/img/gallery_page/gallery2.jpg";
+import gallery3 from "../assets/img/gallery_page/gallery3.jpg";
+import gallery4 from "../assets/img/gallery_page/gallery4.jpg";
 
 function Gallery() {
   return (
     <>
       <div className="gallery">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="gallery_items">
+          <span className="gallery_items_text">СТРИТ</span>
+          <img src={gallery1} alt="" />
+        </div>
+        <div className="gallery_items">
+          <span className="gallery_items_text">СТРИТ</span>
+          <img src={gallery2} alt="" />
+        </div>
+        <div className="gallery_items">
+          <span className="gallery_items_text">СТРИТ</span>
+          <img src={gallery3} alt="" />
+        </div>
+        <div className="gallery_items">
+          <span className="gallery_items_text">СТРИТ</span>
+          <img src={gallery4} alt="" />
+        </div>
       </div>
     </>
   );

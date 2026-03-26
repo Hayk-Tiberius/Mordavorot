@@ -557,3 +557,79 @@ main {
     font-size: 1.2vw;
   }
 }
+
+/* Секция Галереи (Galleries) */
+
+.gallery {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 0.3vw;
+}
+
+.gallery_items {
+  width: 40%;
+  height: 63%;
+  background: linear-gradient(0deg, rgba(54, 54, 54, 1) 0%, rgba(26, 26, 26, 1) 100%);
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery_items_text {
+  position: absolute;
+  color: black;
+  font-weight: 900;
+  font-size: 3vw;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery :nth-child(even) {
+  margin-top: 0vh;
+}
+
+.gallery :nth-child(odd) {
+  margin-bottom: 6vh;
+}
+
+.gallery_items img {
+  height: 100%;
+}
+
+.gallery_items::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(220, 220, 220, 0.808);
+  clip-path: polygon(0 0, 100.1% 0, 0 100.1%);
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+}
+
+.gallery_items:hover::before {
+  transform: translateY(0);
+}
+
+.gallery_items::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(220, 220, 220, 0.808);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+}
+
+.gallery_items:hover::after {
+  transform: translateY(0);
+}
+
+.gallery_items:hover .gallery_items_text {
+  opacity: 1;
+}
