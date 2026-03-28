@@ -7,21 +7,24 @@ function Gallery() {
   return (
     <>
       <div className="gallery">
-        <div className="gallery_items">
-          <span className="gallery_items_text">СТРИТ</span>
-          <img src={gallery1} alt="" />
-        </div>
-        <div className="gallery_items">
-          <span className="gallery_items_text">СТРИТ</span>
-          <img src={gallery2} alt="" />
-        </div>
-        <div className="gallery_items">
-          <span className="gallery_items_text">СТРИТ</span>
-          <img src={gallery3} alt="" />
-        </div>
-        <div className="gallery_items">
-          <span className="gallery_items_text">СТРИТ</span>
-          <img src={gallery4} alt="" />
+        <div className="gallery_title">{"{ Галерея }"}</div>
+        <div className="gallery_container">
+          <div className="gallery_items">
+            <span className="gallery_items_text">СТРИТ</span>
+            <img src={gallery1} alt="" />
+          </div>
+          <div className="gallery_items">
+            <span className="gallery_items_text">СТРИТ</span>
+            <img src={gallery2} alt="" />
+          </div>
+          <div className="gallery_items">
+            <span className="gallery_items_text">СТРИТ</span>
+            <img src={gallery3} alt="" />
+          </div>
+          <div className="gallery_items">
+            <span className="gallery_items_text">СТРИТ</span>
+            <img src={gallery4} alt="" />
+          </div>
         </div>
       </div>
     </>

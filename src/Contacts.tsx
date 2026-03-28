@@ -40,7 +40,7 @@ function Contacts() {
 
       <form className="contact_form" onSubmit={onSubmit}>
         <div className="contacts_items">
-          <span className="contacts_title">Booking</span>
+          <span className="contacts_title">{"{  Контакты  }"}</span>
 
           <div className="contacts_text">
             <div className="form">

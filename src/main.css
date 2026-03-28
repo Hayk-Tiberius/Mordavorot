@@ -486,12 +486,25 @@ main {
 .services {
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
+  gap: 3.3vw;
+}
+
+.services_title {
+  font-family: Stetica;
+  color: #e4e7e4;
+  font-size: 3vw;
+}
+
+.services_container {
+  display: flex;
   gap: 3vw;
+  width: 100%;
+  height: 100%;
 }
 
 .services_items {
@@ -508,8 +521,8 @@ main {
 }
 
 .services_items:hover {
-  width: 70%;
-  height: 90%;
+  width: 60%;
+  height: 80%;
   box-shadow: 0 0 30px 15px rgba(225, 225, 225, 0.3);
   animation: text_scale 5s ease-in-out 1;
   animation-fill-mode: forwards;
@@ -564,6 +577,21 @@ main {
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5.3vw;
+}
+
+.gallery_title {
+  font-family: Stetica;
+  color: #e4e7e4;
+  font-size: 3vw;
+}
+
+.gallery_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
   gap: 0.3vw;
 }
 
@@ -591,11 +619,11 @@ main {
 }
 
 .gallery :nth-child(even) {
-  margin-top: 0vh;
+  top: 2vh;
 }
 
 .gallery :nth-child(odd) {
-  margin-bottom: 6vh;
+  bottom: 2vh;
 }
 
 .gallery_items img {
