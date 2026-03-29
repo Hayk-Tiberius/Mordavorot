@@ -14,15 +14,19 @@ function Gallery() {
             <img src={gallery1} alt="" />
           </div>
           <div className="gallery_items">
-            <span className="gallery_items_text">СТРИТ</span>
+            <span className="gallery_items_text">
+              ФОТО- <br /> СЕССИЯ
+            </span>
             <img src={gallery2} alt="" />
           </div>
           <div className="gallery_items">
-            <span className="gallery_items_text">СТРИТ</span>
+            <span className="gallery_items_text">
+              ФОТО- <br /> КНИГА
+            </span>
             <img src={gallery3} alt="" />
           </div>
           <div className="gallery_items">
-            <span className="gallery_items_text">СТРИТ</span>
+            <span className="gallery_items_text">ИИ</span>
             <img src={gallery4} alt="" />
           </div>
         </div>

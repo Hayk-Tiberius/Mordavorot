@@ -173,8 +173,19 @@ main {
   -ms-overflow-style: none;
   scrollbar-width: none;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
+}
+
+.major_element {
   width: 90%;
+  overflow-y: scroll;
+}
+
+.major_photo {
+  overflow-y: scroll;
+  width: 70%;
 }
 
 .major_section > ::-webkit-scrollbar {
@@ -182,13 +193,14 @@ main {
 }
 
 .major_section > :nth-child(odd) {
-  align-self: start;
+  align-self: flex-start;
   animation: scrollUp 120s linear 1;
 }
 .major_section :nth-child(even) {
-  align-self: end;
+  align-self: flex-end;
   animation: scrollDown 120s linear 1;
 }
+
 .major_section > :nth-child(odd):hover {
   cursor: pointer;
   z-index: 1;
@@ -596,12 +608,12 @@ main {
   transition: opacity 0.3s ease;
 }
 
-.gallery :nth-child(even) {
-  top: 2vh;
+.gallery_items:nth-child(even) {
+  transform: translateY(2vh);
 }
 
-.gallery :nth-child(odd) {
-  bottom: 2vh;
+.gallery_items:nth-child(odd) {
+  transform: translateY(-2vh);
 }
 
 .gallery_items img {
