@@ -125,6 +125,10 @@ function Contacts() {
               </label>
             </div>
           </div>
+          <label className="checkbox">
+            <input type="checkbox" />
+            <span>Я принимаю условия политики конфиденциальности</span>
+          </label>
           <button type="submit" className="btn-17">
             <span className="text-container">
               <span className="text">Отправить</span>

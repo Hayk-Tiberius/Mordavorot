@@ -52,9 +52,18 @@ function App() {
             <CIcon className="icon_item" icon={cibTelegram} />
             <CIcon icon={cibInstagram} />
           </div>
-          <span>
+          <span className="extremism">
             *Профиль в Instagram, соцсеть признана <br /> экстремистской организацией и запрещена в
             РФ
+          </span>
+          <span className="document_legacy_text">
+            <Link to="offer">
+              <span className="document_legacy_tex_offer">Публичная офферта</span>
+            </Link>
+            <br />
+            <span>© 2026 Спевак Н.В.</span>
+            <br />
+            <span>All Rights Reserved</span>
           </span>
         </section>
       </main>

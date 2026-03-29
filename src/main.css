@@ -128,9 +128,16 @@ main {
 /* Работа с третьей секцией */
 
 .section3 {
-  writing-mode: vertical-rl;
   display: flex;
-  gap: 1vw;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.email_text,
+.icons,
+.extremism {
+  writing-mode: vertical-rl;
 }
 
 .all_photos {
@@ -142,14 +149,21 @@ main {
   font-size: 2.2vw;
 }
 
-.icon_item {
-}
-
 .icons {
   display: flex;
-
+  justify-content: flex-end;
   width: 40px;
   height: 40px;
+}
+
+.document_legacy_text {
+  writing-mode: horizontal-tb;
+  padding-bottom: 3.7vh;
+  text-align: center;
+}
+
+.document_legacy_tex_offer {
+  text-decoration: underline;
 }
 
 /* Major секция */
@@ -413,42 +427,6 @@ main {
   -webkit-animation: move-up-alternate 0.3s forwards;
   animation: move-up-alternate 0.3s forwards;
 }
-
-/* @-webkit-keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-} */
 
 .btn-17:after,
 .btn-17:before {
