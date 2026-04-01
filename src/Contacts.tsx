@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Contacts() {
   const [result, setResult] = useState("");
@@ -126,11 +127,16 @@ function Contacts() {
             </div>
           </div>
           <label className="checkbox">
-            <input type="checkbox" />
-            <span>Я принимаю условия политики конфиденциальности</span>
+            <input type="checkbox" required />
+            <span>
+              Я принимаю условия{" "}
+              <Link to="/confidential">
+                <span className="confidential_link">политики конфиденциальности</span>
+              </Link>{" "}
+            </span>
           </label>
           <button type="submit" className="btn-17">
-            <span className="text-container">
+            <span className="text-container" id="contact_button">
               <span className="text">Отправить</span>
             </span>
           </button>

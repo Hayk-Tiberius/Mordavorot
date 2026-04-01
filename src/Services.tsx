@@ -15,7 +15,7 @@ function Services() {
             </div>
             <div className="services_items_text">
               <span className="services_items_text_title">Фото</span>
-              <span>
+              <span className="services_items_text_info">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ipsa sunt, sed nihil
                 dicta, sit itaque illo aliquid sapiente quia necessitatibus quasi vitae impedit
                 aperiam dignissimos laborum consequatur dolorum. Non. Nemo error ipsum cumque quam
@@ -37,7 +37,7 @@ function Services() {
             </div>
             <div className="services_items_text">
               <span className="services_items_text_title">Видео</span>
-              <span>
+              <span className="services_items_text_info">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ipsa sunt, sed nihil
                 dicta, sit itaque illo aliquid sapiente quia necessitatibus quasi vitae impedit
                 aperiam dignissimos laborum consequatur dolorum. Non. Nemo error ipsum cumque quam
@@ -59,7 +59,7 @@ function Services() {
             </div>
             <div className="services_items_text">
               <span className="services_items_text_title">ИИ</span>
-              <span>
+              <span className="services_items_text_info">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ipsa sunt, sed nihil
                 dicta, sit itaque illo aliquid sapiente quia necessitatibus quasi vitae impedit
                 aperiam dignissimos laborum consequatur dolorum. Non. Nemo error ipsum cumque quam
