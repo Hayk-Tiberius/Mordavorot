@@ -1,5 +1,5 @@
 function Offer() {
-  return <></>;
+  return <>1</>;
 }
 
 export default Offer;

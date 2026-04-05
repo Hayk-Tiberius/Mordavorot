@@ -1,5 +1,5 @@
 function Confidential() {
-  return <></>;
+  return <>2</>;
 }
 
 export default Confidential;
