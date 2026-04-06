@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import service1 from "../assets/img/services_page/services_photo.jpg";
-import service2 from "../assets/img/services_page/services_video.jpg";
-import service3 from "../assets/img/services_page/services_ai.jpg";
+// import service1 from "../assets/img/services_page/services_photo.jpg";
+// import service2 from "../assets/img/services_page/services_video.jpg";
+// import service3 from "../assets/img/services_page/services_ai.jpg";
 
 function Services() {
   return (
@@ -10,9 +10,7 @@ function Services() {
         <div className="services_title">{"{ Услуги }"}</div>
         <div className="services_container">
           <div className="services_items">
-            <div className="services_items_photo">
-              <img src={service1} alt="" />
-            </div>
+            <div className="services_items_photo">{/* <img src={service1} alt="" /> */}</div>
             <div className="services_items_text">
               <span className="services_items_text_title">Фото</span>
               <span className="services_items_text_info">
@@ -32,9 +30,7 @@ function Services() {
             </div>
           </div>
           <div className="services_items">
-            <div className="services_items_photo">
-              <img src={service2} alt="" />
-            </div>
+            <div className="services_items_photo">{/* <img src={service2} alt="" /> */}</div>
             <div className="services_items_text">
               <span className="services_items_text_title">Видео</span>
               <span className="services_items_text_info">
@@ -55,7 +51,7 @@ function Services() {
           </div>
           <div className="services_items">
             <div className="services_items_photo">
-              <img className="photo_test" src={service3} alt="" />
+              {/* <img className="photo_test" src={service3} alt="" /> */}
             </div>
             <div className="services_items_text">
               <span className="services_items_text_title">ИИ</span>
