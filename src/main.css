@@ -1,0 +1,162 @@
+/* Теги и общие надстройки */
+
+@font-face {
+  font-family: Stetica;
+  src: url("../assets/fonts/Stetica.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  background-color: #212124;
+}
+
+span {
+  font-family: Stetica;
+  color: #e4e7e4;
+}
+
+a {
+  color: #e4e7e4;
+  text-decoration: none;
+}
+
+main {
+  margin: 22px 12px 0px 26px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Работа с первой секцией */
+
+.section1 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 0.9vw;
+}
+
+.menu a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #e4e7e4;
+}
+
+.menu a::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  right: -50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 0;
+  background-color: #e4e7e4;
+  transition: 0.3s linear;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.author_name {
+  font-size: 68px;
+  padding-bottom: 30px;
+}
+/* Работа с второй секцией */
+
+.section2 {
+  width: 70%;
+}
+
+/* Работа с третьей секцией */
+
+.section3 {
+  writing-mode: vertical-rl;
+  display: flex;
+  gap: 1vw;
+}
+
+.all_photos {
+  writing-mode: vertical-rl;
+  margin: 0;
+}
+
+.email_text {
+  font-size: 2.2vw;
+}
+
+.icon_item {
+}
+
+.icons {
+  display: flex;
+
+  width: 40px;
+  height: 40px;
+}
+
+/* Major секция */
+
+.major_section {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.major_section > ::-webkit-scrollbar {
+  width: 0;
+}
+.major_section > :nth-child(odd) {
+  align-self: start;
+  animation: scrollUp 120s linear 1;
+}
+
+.major_section :nth-child(even) {
+  align-self: end;
+  animation: scrollDown 120s linear 1;
+}
+
+.major_section > :nth-child(odd):hover {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.major_section > :nth-child(even):hover {
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
