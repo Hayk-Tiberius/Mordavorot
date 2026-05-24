@@ -15,9 +15,6 @@ function App() {
             <Link to="/gallery">Галерея</Link>
           </span>
           <span>
-            <Link to="/about">Обо мне</Link>
-          </span>
-          <span>
             <Link to="/services">Услуги</Link>
           </span>
           <span>
