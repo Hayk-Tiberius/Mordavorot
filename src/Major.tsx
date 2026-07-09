@@ -1,5 +1,6 @@
 import App from "./App";
 import cat from "../assets/Major_page_assets/cat.jpg";
+import { useState } from "react";
 
 function Major() {
   return (

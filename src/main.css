@@ -171,12 +171,10 @@ main {
   align-self: start;
   animation: scrollUp 120s linear 1;
 }
-
 .major_section :nth-child(even) {
   align-self: end;
   animation: scrollDown 120s linear 1;
 }
-
 .major_section > :nth-child(odd):hover {
   cursor: pointer;
   z-index: 1;
